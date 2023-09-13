@@ -114,8 +114,8 @@ $ make -f Makefile.vc707-u500devkit mcs
 If you do not have PCI Express Gen1/2/3 FMC Module run following commands:
 ```sh
 $ make -f Makefile.vc707-u500devkit nopcie
-$ make -f Makefile.vc707-u500devkit verilog
-$ make -f Makefile.vc707-u500devkit mcs
+$ make -f Makefile.vc707-u500devkit verilog -j`nproc`
+$ make -f Makefile.vc707-u500devkit mcs -j`nproc`
 ```
 
 Note: This flow requires Vivado 2016.4. Newer versions are known to fail.
