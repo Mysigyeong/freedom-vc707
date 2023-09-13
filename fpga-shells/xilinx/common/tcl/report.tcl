@@ -32,6 +32,9 @@ report_io -file [file join $rptdir io.txt]
 # Report a table of all clocks in the design
 report_clocks -file [file join $rptdir clocks.txt]
 
+# Report power
+report_power -file [file join $rptdir power.txt]
+
 # Fail loudly if timing not met
 #
 # We would ideally elevate critical warning Route 35-39 to an error, but it is
