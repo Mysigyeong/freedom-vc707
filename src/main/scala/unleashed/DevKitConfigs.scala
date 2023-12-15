@@ -17,7 +17,7 @@ import sifive.blocks.devices.uart._
 class FreedomU500Config extends Config(
   new WithJtagDTM            ++
   new WithNMemoryChannels(1) ++
-  new WithNBigCores(4)       ++
+  new WithNBigCores(1)       ++
   new BaseConfig
 )
 
